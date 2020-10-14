@@ -1,0 +1,87 @@
+
+@media only screen and (max-width:780px)
+{
+  body{
+    background: lightskyblue;
+  }
+
+  .controls
+  {
+    display: none;
+  }
+}
+
+
+
+@media only screen and (min-width:780px)
+{
+  .controls
+  {
+    display: flex;
+  }
+}
+
+.slider
+{
+  width: 300px;
+}
+
+.counter {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  > div:first-child {
+    font-size: 100px;
+  }
+
+  a {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .controls {   
+    flex-direction: row-reverse;
+
+    > div {
+      min-width: 40px;
+      height: 40px;
+      text-align: center;
+      background: #fff;
+      color: #3f51b5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 0 5px;
+      cursor: pointer;
+      border:1px solid #3f51b5;
+      box-shadow: 0px 0px 0px 2px lightgray;
+      border-radius: 10px;
+    }
+
+    
+    
+    :hover{
+      background: lightgray;
+      color: #3f51b5;
+     }
+  }
+}
+
+
+
+.container
+{
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
